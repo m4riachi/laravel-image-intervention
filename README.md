@@ -18,6 +18,8 @@ composer require m4riachi/laravel-image-intervention
 ## Usage
 
 ``` php
+//path from your laravel storage
+$imagePath = 'public/photo1.jpg';
 LaravelImageIntervention::resize($imagePath, 300, 300, [
     'crop' => false,
     'quality' => 90
