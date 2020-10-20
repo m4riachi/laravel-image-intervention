@@ -1,0 +1,55 @@
+{
+    "name": "m4riachi/laravel-image-intervention",
+    "description": "Get resized image from original image",
+    "keywords": [
+        "m4riachi",
+        "laravel-image-intervention"
+    ],
+    "homepage": "https://github.com/m4riachi/laravel-image-intervention",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "m4riachi",
+            "email": "taoufiq.benmessaoud@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "illuminate/support": "^8.0",
+        "intervention/image": "^2.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "M4riachi\\LaravelImageIntervention\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "M4riachi\\LaravelImageIntervention\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "M4riachi\\LaravelImageIntervention\\LaravelImageInterventionServiceProvider"
+            ],
+            "aliases": {
+                "LaravelImageIntervention": "M4riachi\\LaravelImageIntervention\\LaravelImageInterventionFacade"
+            }
+        }
+    }
+}
