@@ -1,11 +1,11 @@
-# Very short description of the package
+# Image Resizer
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/m4riachi/laravel-image-intervention.svg?style=flat-square)](https://packagist.org/packages/m4riachi/laravel-image-intervention)
 [![Build Status](https://img.shields.io/travis/m4riachi/laravel-image-intervention/master.svg?style=flat-square)](https://travis-ci.org/m4riachi/laravel-image-intervention)
 [![Quality Score](https://img.shields.io/scrutinizer/g/m4riachi/laravel-image-intervention.svg?style=flat-square)](https://scrutinizer-ci.com/g/m4riachi/laravel-image-intervention)
 [![Total Downloads](https://img.shields.io/packagist/dt/m4riachi/laravel-image-intervention.svg?style=flat-square)](https://packagist.org/packages/m4riachi/laravel-image-intervention)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+A simple helper who use Image Intervention to resize images
 
 ## Installation
 
@@ -18,14 +18,12 @@ composer require m4riachi/laravel-image-intervention
 ## Usage
 
 ``` php
-// Usage description here
+LaravelImageIntervention::resize($imagePath, 300, 300, [
+    'crop' => false,
+    'quality' => 90
+])
 ```
 
-### Testing
-
-``` bash
-composer test
-```
 
 ### Changelog
 

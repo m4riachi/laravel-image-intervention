@@ -9,7 +9,7 @@ use Intervention\Image\ImageManagerStatic as Image;
 
 class LaravelImageIntervention
 {
-    public function imageUrl($imagePath = '', $width = null, $height = null, $config = array())
+    public function resize($imagePath = '', $width = null, $height = null, $config = array())
     {
         $quality = isset($config['quality']) ? $config['quality'] : 100;
         $crop = isset($config['crop']) ? !!($config['crop']) : true;
